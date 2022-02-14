@@ -48,8 +48,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         "fonts/**",
                         "js/**",
                         "scss/**",
-                        "/",
-                        "/login").permitAll()
+                        "/**",
+                        "/login**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()

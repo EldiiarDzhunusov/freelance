@@ -13,14 +13,15 @@ import java.util.List;
 @Controller
 public class MainController {
     @GetMapping("/login")
-    public String login(){
+    public String loginPage(){
         return "login";
     }
-//
-//    @PostMapping("/login")
-//    public String postLogin(){
-//        return "login";
-//    }
+
+    @PostMapping("/login")
+    public String login(){
+        return "redirect:/";
+    }
+
 
 
 
